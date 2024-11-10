@@ -32,7 +32,7 @@
     <div class="tagCloud-tags">
         {{ range first $limit $taxonomy.ByCount }}
             <a href="{{ .Page.RelPermalink }}">
-                {{ .Page.Title }}
+                {{ .Page.Title | lower }}
             </a>
         {{ end }}
     </div>

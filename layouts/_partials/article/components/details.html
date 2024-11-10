@@ -8,7 +8,7 @@
             {{ $BackgroundColor := default $color.BackgroundColor .Params.style.background }}
             {{ $TextColor := default $color.TextColor .Params.style.color }}
             <a href="{{ .RelPermalink }}" style="background-color: {{ $BackgroundColor | safeCSS }}; color: {{ $TextColor | safeCSS }};">
-                {{ .LinkTitle }}
+                {{ .LinkTitle | lower }}
             </a>
         {{ end }}
     </header>
@@ -20,7 +20,7 @@
                 {{- $Page.Title -}}
             </a>
         </h2>
-    
+
         {{ with $Page.Params.description }}
         <h3 class="article-subtitle">
             {{ . }}
@@ -33,7 +33,7 @@
     {{ $showTime := or $showDate $showReadingTime }}
     {{ $showTranslations := $Page.IsTranslated }}
     {{ $showTags := and $Page.Site.Params.Article.List.ShowTags ($Page.GetTerms "tags") $IsList }}
-    
+
     {{ if or $showTime $showTranslations $showTags }}
     <footer class="article-meta">
         {{ if $showTime }}

@@ -148,10 +148,10 @@
     &,
     .menu-bottom-section ol {
         flex-direction: column;
-        gap: var(--spacing-2xl);
+        gap: 15px;
 
         @include respond(xl) {
-            gap: var(--spacing-xl);
+            gap: 15px;
         }
     }
 
