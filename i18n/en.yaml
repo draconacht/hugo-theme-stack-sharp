@@ -57,17 +57,17 @@ widget:
 
 search:
     title:
-        other: Search
+        other: search
 
     placeholder:
-        other: Type something...
+        other: type something...
 
     resultTitle:
         other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
 
 footer:
     builtWith:
-        other: Built with {{ .Generator }}
+        other: built with {{ .Generator }}
 
     designedBy:
-        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+        other: theme {{ .Theme }} designed by {{ .DesignedBy }}

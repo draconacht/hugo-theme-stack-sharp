@@ -16,7 +16,8 @@
     width: 100%;
     position: relative;
 
-    --sidebar-avatar-size: 100px;
+    --sidebar-avatar-width: 180px;
+    --sidebar-avatar-height: 45px;
     --sidebar-element-separation: 20px;
     --emoji-size: 40px;
     --emoji-font-size: 20px;
@@ -29,7 +30,8 @@
     }
 
     @include respond(2xl) {
-        --sidebar-avatar-size: 120px;
+        --sidebar-avatar-width: 180px;
+        --sidebar-avatar-height: 45px;
         --sidebar-element-separation: 25px;
         --emoji-size: 40px;
     }
@@ -39,7 +41,8 @@
     }
 
     &.compact {
-        --sidebar-avatar-size: 80px;
+        --sidebar-avatar-width: 80px;
+        --sidebar-avatar-height: 20px;
         --emoji-size: 30px;
         --emoji-font-size: 15px;
 
@@ -97,14 +100,14 @@
     .site-avatar {
         position: relative;
         margin: 0;
-        width: var(--sidebar-avatar-size);
-        height: var(--sidebar-avatar-size);
+        width: var(--sidebar-avatar-width);
+        height: var(--sidebar-avatar-height);
         flex-shrink: 0;
 
         .site-logo {
             width: 100%;
             height: 100%;
-            border-radius: 100%;
+            border-radius: 0%;
             box-shadow: var(--shadow-l1);
         }
 
