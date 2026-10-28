@@ -8,12 +8,12 @@
         --main-top-padding: 50px;
     }
 
-    --body-background: #ecdcf3;
+    --body-background: #c0acd8;
 
-    --accent-color: #2e3a47;
+    --accent-color: #000000c0;
     --accent-color-darker: #252f39;
     --accent-color-text: #e9d7f1;
-    --body-text-color: #535353;
+    --body-text-color: #000000e0;
 
     --tag-border-radius: 0px;
 
@@ -21,7 +21,7 @@
 
     &[data-scheme="dark"] {
         --body-background: #2b1d32;
-        --accent-color: #ecf0f1;
+        --accent-color: #ecf0f1c4;
         --accent-color-darker: #bdc3c7;
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
@@ -41,12 +41,12 @@
 *   Card style
 */
 :root {
-    --card-background: #d2cdea;
-    --card-background-selected: #eaeaea;
+    --card-background: #d2cdea99;
+    --card-background-selected: #eaeaea60;
 
-    --card-text-color-main: #355a4b;
-    --card-text-color-secondary: #404b45;
-    --card-text-color-tertiary: #66716b;
+    --card-text-color-main: #222222ed;
+    --card-text-color-secondary: #44404b;
+    --card-text-color-tertiary: #44404b;
     --card-separator-color: rgba(218, 218, 218, 0.5);
 
     --card-border-radius: 0px;
@@ -68,11 +68,11 @@
     }
 
     &[data-scheme="dark"] {
-        --card-background: #342e4b;
+        --card-background: #3e356180;
         --card-background-selected: rgba(255, 255, 255, 0.16);
-        --card-text-color-main: #bcd3d3;
-        --card-text-color-secondary: #bcd3d3;
-        --card-text-color-tertiary: #86a0a0;
+        --card-text-color-main: #dfdfdfcf;
+        --card-text-color-secondary: #dfdfdf9f;
+        --card-text-color-tertiary: #dfdfdf9f;
         --card-separator-color: rgba(255, 255, 255, 0.12);
     }
 }
@@ -96,7 +96,7 @@
 */
 :root {
     --blockquote-border-size: 4px;
-    --blockquote-background-color: #e0e7eb;
+    --blockquote-background-color: #26802329;
 
     --heading-border-size: 4px;
 
@@ -164,7 +164,7 @@
 }
 
 :root {
-    --menu-icon-separation: 25px;
+    --menu-icon-separation: 15px;
     --container-padding: 15px;
 
     @include respond(md) {
